@@ -42,8 +42,10 @@ new_docs = [{
 }]
 
 # Function to insert docs to database.
-# Other Functions: coll.find(), coll.update_one(), coll.update_many(), coll.remove()
-# coll.update_many({"gender": "m"}, {$set: {"hair_color": "blonde"}}) - Sets all Males to blonde hair
+# Other Functions: coll.find(), coll.update_one(),
+# coll.update_many(), coll.remove()
+# coll.update_many({"gender": "m"}, {$set: {"hair_color": "blonde"}})
+#  - Sets all Males to blonde hair
 coll.insert_many(new_docs)
 
 documents = coll.find()
